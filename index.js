@@ -11,7 +11,7 @@ const myApp = express();
 const PORT = process.env.PORT || 5000;
 dotenv.config()
 myApp.use(bodyParser.json())
-myApp.get('/home', (req, res) => {
+myApp.get('/', (req, res) => {
     res.send("<h2>this is home page </h2>")
 })
 const uri = process.env.MONGODB_URI;
